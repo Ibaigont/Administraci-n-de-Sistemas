@@ -1,1 +1,8 @@
+# Archivo de exportaciones NFS: /etc/exports
+# Configuración para entorno distribuido con IPs fijas:
+# MV2 (Broker / Escritura de datos): rw
+# MV4 (Servidor Web / Lectura de datos): ro
+/datosNfs  IP_MV2(rw,sync,no_subtree_check,no_root_squash) IP_MV4(ro,sync,no_subtree_check)
 
+# Alternativa para entorno local (1 sola máquina virtual para examen):
+# /datosNfs  127.0.0.1(rw,sync,no_subtree_check,no_root_squash)

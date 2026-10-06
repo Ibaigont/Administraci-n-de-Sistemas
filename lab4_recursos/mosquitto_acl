@@ -1,0 +1,5 @@
+# Archivo de control de acceso: /etc/mosquitto/acl
+# El usuario sensor tiene permisos de publicación y suscripción en los tópicos del campo
+user sensor
+topic readwrite campo/temperatura
+topic readwrite campo/humedad
